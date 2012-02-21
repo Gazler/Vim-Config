@@ -1,24 +1,26 @@
-set nocompatible 
-set scrolloff=3 
-set ai 
+call pathogen#infect()
+set nocompatible
+set scrolloff=3
+set ai
 
-set showcmd 
+set showcmd
 set nobackup
-set number 
-set ruler 
+set number
+set ruler
 
-set hlsearch 
-set incsearch 
-set showmatch 
-set ignorecase 
-set smartcase 
+set hlsearch
+set incsearch
+set showmatch
+set ignorecase
+set smartcase
+set cursorline
 
-set visualbell t_vb= 
-set novisualbell 
+set visualbell t_vb=
+set novisualbell
 
-set backspace=indent,eol,start 
+set backspace=indent,eol,start
 
-set t_RV= 
+set t_RV=
 
 set ts=2
 set expandtab
@@ -31,7 +33,9 @@ set foldlevel=1         "this is just what i use
 
 let mapleader = ","
 
+
 colorscheme railscasts
+
 
 "disable up down left and right
 nnoremap <up> <nop>
@@ -54,4 +58,4 @@ nnoremap <C-l> <C-w>l
 
 nnoremap <leader>c :w !diff % -<cr>
 
-
+autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
